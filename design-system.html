@@ -87,10 +87,10 @@
       <!-- navigation -->
       <div>
         <nav>
-          <ul class="primary-navigation underline-indicators flex ff-serif uppercase fs-400 letter-spacing-2">
-            <li><a class="text-white" href="#"><span>01</span> Active</a>
-            <li><a class="text-white" href="#"><span>02</span> Hovered</a>
-            <li><a class="text-white" href="#"><span>03</span> Idle</a>
+          <ul class="primary-navigation underline-indicators flex">
+            <li class="active"><a class="text-white uppercase letter-spacing-2" href="#"><span>01</span> Active</a>
+            <li><a class="text-white uppercase letter-spacing-2" href="#"><span>02</span> Hovered</a>
+            <li><a class="text-white uppercase letter-spacing-2" href="#"><span>03</span> Idle</a>
           </ul>
         </nav>
       </div>
@@ -101,14 +101,28 @@
               <a href="#" class="large-button uppercase text-dark fs-600 bg-white ff-serif">Explore</a>
           </div>
           
-          <div style="margin-bottom: 50vh;">
+          <div class="flow" style="margin-bottom: 100vh; --flow-space: 4rem">
               <!-- Tabs -->
-              
+              <div class="tab-list underline-indicators flex">
+                <button aria-selected="true" class="text-accent ff-sans-cond uppercase letter-spacing-2 bg-dark">Moon</button>
+                <button aria-selected="false" class="text-accent ff-sans-cond uppercase letter-spacing-2 bg-dark">Mars</button>
+                <button aria-selected="false" class="text-accent ff-sans-cond uppercase letter-spacing-2 bg-dark">Europa</button>
+              </div>
               
               <!-- Dots -->
-              
+              <div class="dot-indicators flex">
+                <button aria-selected="true"><span class="sr-only">Slide title</span></button>
+                <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+              </div>
               
               <!-- Numbers -->
+              <div class="number-indicators grid">
+                <button class="bg-dark text-white ff-serif fs-500" aria-selected="true">1</button>
+                <button class="bg-dark text-white ff-serif fs-500" aria-selected="false">2</button>
+                <button class="bg-dark text-white ff-serif fs-500" aria-selected="false">3</button>
+              </div>
+
           </div>
       </div>
       
